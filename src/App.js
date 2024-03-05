@@ -4,7 +4,7 @@ function App() {
     
         <div>
 
-          l<h2>LETS GET STARTED!!!!</h2>
+          <h2>LETS GET STARTED!!!!</h2>
            <ExpenseItem/>
         </div>
   );

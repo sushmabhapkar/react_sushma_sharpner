@@ -1,15 +1,20 @@
 import React from "react";
-
+import './ExpenseItem.css';
 const ExpenseItem=()=>
 {
+
+    const ExpenseDate=new Date(28-3-2020);
+    const ExpenseTitle="Car Insurances";
+    const ExpenseAmount="294.67";
+
    return(
-   <div>
-    <h2>Expense Item</h2>
-     <ul>
-        <li>petrol Rs100</li>
-        <li>food Rs200</li>
-        <li>Movies Rs500</li>
-     </ul>
+   <div className="expense-item">
+    <div>{ExpenseDate.toISOString()}</div>
+     <div className="expense-item__description">
+       <h2>{ExpenseTitle}</h2>
+    </div>
+      <div className="expense-item__price">${ExpenseAmount}</div>
+
    </div>
    
    );
