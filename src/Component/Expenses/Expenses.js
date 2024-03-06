@@ -14,6 +14,7 @@ function Expenses(props)
 
 
 return(
+    <div>
 <Card className="expenses">
 
 <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler}/>
@@ -31,6 +32,7 @@ date={expense.date}
 ))
 }
     </Card>
+    </div>
 );
 }
 export default Expenses;
