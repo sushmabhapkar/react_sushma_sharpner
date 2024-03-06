@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
@@ -20,15 +20,15 @@ function ExpenseItem(props) {
 
 
 //function for update
-const[title,setTitle]=useState(props.title);
+// const[title,setTitle]=useState(props.title);
 
-const updateHandler=()=>
-{
+// const updateHandler=()=>
+// {
 
-    setTitle("Updated!!!");
-    console.log(title);
-    console.log("ExpenseItem Evaluated bt React");
-}
+//     setTitle("Updated!!!");
+//     console.log(title);
+//     console.log("ExpenseItem Evaluated bt React");
+// }
 
   
 
