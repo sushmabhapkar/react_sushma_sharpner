@@ -4,27 +4,44 @@ import Card from '../UI/Card';
 import './ExpenseItem.css';
 
 function ExpenseItem(props) {
- const[isDelete,setIsDelete]=useState(false);
+    //function for the Delete button
+//  const[isDelete,setIsDelete]=useState(false);
 
- const deleteHandler=()=>
- {
+//  const deleteHandler=()=>
+//  {
 
-    setIsDelete(true);
- };
- if(isDelete)
- {
-    return null;
- }
+//     setIsDelete(true);
+//  };
+//  if(isDelete)
+//  {
+//     return null;
+//  }
+
+
+
+//function for update
+const[title,setTitle]=useState(props.title);
+
+const updateHandler=()=>
+{
+
+    setTitle("Updated!!!");
+    console.log(title);
+    console.log("ExpenseItem Evaluated bt React");
+}
+
   
 
     return (
         <div>
-        <Card className="expense-item" id={`expenses-${props.id}`}>
+        {/* <Card className="expense-item" id={`expenses-${props.id}`}> */}
+         <Card className="expense-item" >
             <ExpenseDate date={props.date}/>
             <div className="expense-item__description">
-                <h2>{props.title}</h2>
+                <h2>{title}</h2> 
+                
                 <div className="expense-item__price">${props.amount}</div>
-                <button onClick={deleteHandler}>Delete Expense</button>
+                <button onClick={updateHandler}>Update Expense</button>
             </div>
             
         </Card>
