@@ -42,7 +42,7 @@ const App=(props)=> {
   return (
     
         <div>
-         <h2>.....Expense Tracking Applications.....</h2>
+         <h2 style={{textAlign:'center',color:"red"}}>.....Expense Tracking Applications.....</h2>
           <NewExpense onAddExpense={addExpenseHandler}/>
           <Expenses items={expenses}/>
         </div>

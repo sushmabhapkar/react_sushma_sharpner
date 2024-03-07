@@ -4,6 +4,7 @@ import Card from '../UI/Card';
 import './Expenses.css';
 import ExpenseFilter from "./ExpenseFilter";
 import ExpenseList from "./ExpenseList";
+import ExpensesChart from "./ExpensesCart";
 
 
 function Expenses(props)
@@ -32,7 +33,7 @@ function Expenses(props)
           
           
     
-           
+          <ExpensesChart expenses={filteredExpenses}/>
     
            <ExpenseList items={filteredExpenses}/>
     
